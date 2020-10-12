@@ -397,5 +397,8 @@
         <!-- ID0:Fingerprint:Strong -->
         <item>0:2:15</item>
     </string-array>
-</resources>
 
+    <!-- Shows the required view for in-display fingerprint --> 
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
+
+</resources>
