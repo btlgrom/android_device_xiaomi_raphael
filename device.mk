@@ -51,7 +51,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothQti
+    libbluetooth_qti
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -73,7 +73,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_COPY_FILES += \
-    vendor/bootleggers/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/404/configs/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.raphael
@@ -143,6 +143,10 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service.raphael
+
+# Qti
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt
 
 # Ril
 PRODUCT_PACKAGES += \
